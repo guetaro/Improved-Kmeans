@@ -237,7 +237,7 @@ for i in (PCA_components):
     print('improved Kmeans algorithm accuracy for ' + str(i)  + ' PCA components is ' + str(accuracy_score(number_labels,y_train)))
         
 #Iris dataset
-iris = pd.read_csv(r'C:\Users\roigu\Desktop\לימודים\תואר שני\שנה ב\למידה בלתי מפוקחת/IRIS.csv')
+iris = pd.read_csv(Path/To/Iris/Dataset/IRIS.csv')
 y_iris = iris.iloc[:, 4].values
 y_iris[y_iris == 'Iris-setosa'] = 0
 y_iris[y_iris == 'Iris-versicolor'] = 1
@@ -287,7 +287,7 @@ for i in (num_centers):
             number_labels[j] = reference_labels[labels[j]]
     print('improved Kmeans algorithm with function for centroid initialization accuracy for ' + str(i) + ' centers is ' + str(accuracy_score(number_labels,y_iris)))
 
-data = pd.read_csv(r'C:\Users\roigu\Desktop\לימודים\תואר שני\שנה ב\למידה בלתי מפוקחת/letter-recognition.csv')
+data = pd.read_csv(Path/To/Letter/Dataset/letter-recognition.csv')
 data = data.fillna(value = -1)
 letters = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
 for i,letter in enumerate (letters):
