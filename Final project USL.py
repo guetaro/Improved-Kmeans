@@ -130,8 +130,8 @@ def improved_kmeans(X, n_clusters,pretrained_clusters = None, rseed=2):
         centers = new_centers
     
     return centers, cluster
-#Centroid initialization functions
-num_centers = [10,20,50,100,150]
+#Centroid initialization functions testing
+num_centers = [10,20,50,100]
 for i in (num_centers):
     start = time.time()
     centers, labels = K_means(X_train, i)
