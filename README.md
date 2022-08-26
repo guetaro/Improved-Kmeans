@@ -21,4 +21,5 @@ I tested the methods on several well-Known datasets, and it seems the PCA algori
 Mnist , Letter , Iris
 
 ## packages 
+Python 3.9
 keras , sklearn , numpy , matplotlib , time , scipy , pandas , sklearn
